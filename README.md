@@ -84,6 +84,12 @@ https://user-images.githubusercontent.com/4382450/126964778-1770dea8-9c12-4046-8
 ![Screenshot 2021-07-26 at 10 13 14](https://user-images.githubusercontent.com/4382450/126965628-659ef501-b067-4ad7-b2ed-36536ac7ca7e.png)
 
 
+## Accessibility Coverage
+**Turn on the sound ❤️
+
+https://user-images.githubusercontent.com/4382450/126966070-b165c6ed-78a9-4ea1-a0ef-5cbf23b5396c.MP4
+
+
 ## Author
 
 Jefferson Batista, jeffsouzabatista@gmail.com
