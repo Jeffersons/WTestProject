@@ -1,5 +1,3 @@
-# WTestProject
-
 # WTestProject JeffSB ![progress](https://progress-bar.dev/74/?title=completed "progress") 
 
   * [x] Deployment Target iOS 11.0+
