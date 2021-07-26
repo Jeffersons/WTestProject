@@ -1,0 +1,15 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'WTestProject_Example' do
+  pod 'WTestProject', :path => '../'
+
+  pod 'WTestProject', :path => '../', :testspecs => ['Tests']
+
+  target 'WTestProject_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
