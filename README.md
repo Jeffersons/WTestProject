@@ -93,6 +93,13 @@ https://user-images.githubusercontent.com/4382450/126964778-1770dea8-9c12-4046-8
 
 https://user-images.githubusercontent.com/4382450/126966070-b165c6ed-78a9-4ea1-a0ef-5cbf23b5396c.MP4
 
+## Module Creation
+*I adapted a template to create a module with the viper architecture, test examples and directory structure
+You can use as much as you want 😉
+
+```
+$ pod lib create MyModuleName --template-url=https://github.com/Jeffersons/viper-pod-template
+```
 
 ## Author
 
