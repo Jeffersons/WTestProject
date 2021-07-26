@@ -34,7 +34,7 @@
   ![progress](https://progress-bar.dev/74 "progress") Indexing CSV performance
   
 ## Requirements
-- Xcode 11.0+
+- Xcode 12.0+
 
 ## Install
 This project uses CocoaPods as its dependency manager, so after cloning the project.
@@ -68,6 +68,10 @@ This project is divided into three modules:
 WTestProject: Responsible for the organization of environments and the Apple distribution certificates
 WTestToolKit: Responsible for all UI components
 WTestPostalModule: Responsible for the feature 1 (ZipCode List with Search)
+
+https://github.com/Jeffersons/WTestProject
+https://github.com/Jeffersons/WTestToolKit
+https://github.com/Jeffersons/WTestPostalModule
 
 ## LightMode and DarkMode
 
