@@ -60,8 +60,18 @@ This issue can be resolved by clearing this directory: 'Library/Developer/Xcode/
 ./jefferson_developer/projects/myprojet (correct)
 
 ## Coverage UnitTests
+![progress](https://progress-bar.dev/90 "progress") Business Logic UnitTests (Interactor)
+
+![progress](https://progress-bar.dev/0 "progress") Presentation Logic UnitTests (Presenter)
+
+![progress](https://progress-bar.dev/0 "progress") Display Logic UnitTests (ViewController)
+
 ![Screenshot 2021-07-26 at 01 16 37](https://user-images.githubusercontent.com/4382450/126962615-612e92b6-f4b4-4eb6-a3ec-76f664b4d8bd.png)
 ![Screenshot 2021-07-26 at 01 16 29](https://user-images.githubusercontent.com/4382450/126962628-5c5bea1f-465f-4258-8e02-68fad57f672e.png)
+
+## Memory Leak Test
+![Screenshot 2021-07-26 at 00 30 32](https://user-images.githubusercontent.com/4382450/126976338-8018fe46-15a4-4f01-9d59-0bc329657362.png)
+
 
 ## Modularization
 This project is divided into three modules:
