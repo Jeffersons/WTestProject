@@ -1,15 +1,49 @@
-use_frameworks!
+source 'https://github.com/CocoaPods/Specs.git'
 
-platform :ios, '10.0'
+use_frameworks!
+platform :ios, '11.0'
+
+ENVIRONMENT = ENV["ENVIRONMENT"].nil? ? "Dev" : ENV["ENVIRONMENT"]
+##MARK: - WTest Developer
+def wtest_dev
+  pod 'Alamofire', '~> 5.4'
+  pod 'CSV.swift', '~> 2.4.3'
+  pod 'RealmSwift', '~> 10.5.2'
+
+  pod 'WTestProject', :path => '../'
+  pod 'WTestPostalModule', :path => '../../WTestPostalModule'
+  pod 'WTestToolKit', :path => '../../WTestToolKit'
+end
+##MARK: - WTest PreDeploy
+def wtest_pre
+  pod 'Alamofire', '~> 5.4'
+  pod 'CSV.swift', '~> 2.4.3'
+  pod 'RealmSwift', '~> 10.5.2'
+
+  pod 'WTestProject', :path => '../'
+  pod 'WTestPostalModule', :git => 'git@github.com:Jeffersons/WTestPostalModule.git', branch: 'develop'
+  pod 'WTestToolKit', :git => 'git@github.com:Jeffersons/WTestToolKit.git', branch: 'develop'
+end
+##MARK: - WTest Production
+def wtest_pro
+  pod 'Alamofire', '~> 5.4'
+  pod 'CSV.swift', '~> 2.4.3'
+  pod 'RealmSwift', '~> 10.5.2'
+
+  pod 'WTestProject', :path => '../'
+  pod 'WTestPostalModule', :git => 'git@github.com:Jeffersons/WTestPostalModule.git', branch: 'master'
+  pod 'WTestToolKit', :git => 'git@github.com:Jeffersons/WTestToolKit.git', branch: 'master'
+end
 
 target 'WTestProject_Example' do
-  pod 'WTestProject', :path => '../'
-
-  pod 'WTestProject', :path => '../', :testspecs => ['Tests']
-
-  target 'WTestProject_Tests' do
-    inherit! :search_paths
-
-    
+  case ENVIRONMENT.downcase
+    when 'dev'
+      wtest_dev
+    when 'pre'
+      wtest_pre
+    when 'pro'
+      wtest_pro
+    else
+      abort ('THE ENVIRONMENT ' + ENVIRONMENT + ' DOES NOT EXIST').red
   end
 end
