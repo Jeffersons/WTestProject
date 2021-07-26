@@ -56,7 +56,9 @@ $ pod install --repo-update
 This issue can be resolved by clearing this directory: 'Library/Developer/Xcode/DerivedData'
 
 *If you do not find the swiftLint dependency, check if the root directories up to the project base do not contain space between them, for example:
+
 ./jefferson developer/projects/myprojet (this can cause problems with scripts written in build phases) 
+
 ./jefferson_developer/projects/myprojet (correct)
 
 ## Coverage UnitTests
